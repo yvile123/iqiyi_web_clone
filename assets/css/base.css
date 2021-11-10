@@ -1,0 +1,87 @@
+:root {
+    --main-color: rgb(28, 199, 73);
+    --text-color: #828387;
+    --white-color: #fff;
+    --black-color: #000;
+    --golden-color: rgb(242, 191, 131);
+    --header-height: 60px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body ::selection {
+    color: var(--black-color);
+    background-color: var(--white-color);
+}
+
+#main {
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.1s ease;
+    -webkit-transition: all 0.1s ease;
+}
+
+.btns-play-and-add > span {
+    border-radius: 50%;
+    display: inline-block;
+    width: 32px;
+    height: 32px; 
+    text-align: center;
+    opacity: 0.85;
+    position: relative;
+}
+.btns-play-and-add > span:hover {
+    opacity: 1;
+}
+.btn-play {
+    background-color: var(--main-color);  
+    margin-right: 5px;
+}
+.btn-play > i {
+    color: var(--white-color);
+    line-height: 3.2rem;
+    width: 32px;
+    font-size: 1.3rem;
+}
+.btn-add {
+    background-color: var(--white-color);
+}
+.btn-add > i {
+    color: var(--black-color);
+    line-height: 3.2rem;
+    font-size: 1.4rem;
+    position: relative;
+}
+.btn-add > i > i {
+    color: var(--black-color);
+    width: 8px;
+    height: 8px;
+    font-size: 0.6rem;
+    position: absolute;
+    top: 7px;
+    right: -3px;
+    background-color: var(--white-color);
+}
